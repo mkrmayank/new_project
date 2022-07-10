@@ -6,7 +6,7 @@ from django.http import HttpResponse, Http404
 #     return render(request, 'index.html')
 
 def index(request):
-    return render(request, 'oj/ide.html')
+    return render(request, 'oj/index.html')
 
 def detail(request, question_id):
     try:
