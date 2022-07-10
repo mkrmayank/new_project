@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <title>Question Page</title>
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hello!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    <!-- below nav bar -->
+
+    
+    <div class="container my-5">
+
+        <!-- question title -->
+        <h1 class="text-center">
+            MINIMUM JUMPS
+        </h1>
+
+
+        <!-- buttons -->
+        <div class="col-lg-7">
+          
+            <a href="" role="button" class="btn btn-primary text-light mb-4">Submit<i class="bx bx-right-arrow-alt bx-middle ml-1"></i></a>
+            <a href="" role="button" class="btn btn-secondary text-light mb-4">My Submissions<i class="bx bx-right-arrow-alt bx-middle ml-1"></i></a>
+            <a href="" role="button" class="btn btn-primary text-light mb-4">All Submissions<i class="bx bx-right-arrow-alt bx-middle ml-1"></i></a>
+        </div>
+
+
+
+        <p>
+            You are given N buildings numbered from 1 to N and M pairs of building denoting which pair of buildings are close enough to jump from one another. Given current building you are at and final building where you want to be at, find out minimum number of jumps required. If it is not possible to reach to final building, print 0.
+        </p>
+        <hr>
+        <h4 class="my-2">Constraints</h4>
+        <p>
+            1≤N≤3500
+            <br>
+            1≤M≤106
+        </p>
+        <h4 class="my-2">Input</h4>
+        <p>
+            First line contains two integers N & M, denoting number of buildings and number of pairs of building that are close enough to jump from one another.
+            
+            Next M lines contain two integers each denoting buildings which are close enough. Last line of input also contains two integers denoting building you are starting at and building you want to reach.
+            <br>
+        </p>
+        <h4 class="my-2">Output</h4>
+        <p>
+            Print minimum number of jumps required to reach final building. If it is not possible then print "0".
+        </p>
+        <h4 class="my-2">Example</h4>
+        
+        <!-- input output as card -->
+
+        <h5 class="my-2">Input</h5>
+        <div class="card bg-dark text-white" style="padding: 8px;">
+            5
+            <br>1 3
+            <br>2 3
+            <br>1 2
+            <br>3 5
+            <br>4 5
+            <br>1 4
+        </div>
+        <h5 class="my-2">Output</h5>
+        <div class="card bg-dark text-white" style="padding: 8px;">
+            3
+        </div>
+
+    </div>
+</body>
+</html>
