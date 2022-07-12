@@ -36,8 +36,8 @@
 
 
     <!-- below nav bar -->
-    <div class="container text-center">
-        <h1 class="my-5">CODE</h1>
+    <div class="container">
+        <h1 class="my-5 text-center">CODE</h1>
         <hr>
         <br>
 
@@ -47,7 +47,7 @@
             </div>
             <div class="dropdown col-md-3 text-start">
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: gray;">
-                  ---------------
+                  Python 3.8.0
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a class="dropdown-item" href="#">G++</a></li>
@@ -56,18 +56,24 @@
                 </ul>
               </div>
         </div>
+        <form action="/runcode" method="post">
+            {% csrf_token %}
+            <textarea action="/runcode" method="post" id="codearea" type="text" name="codearea" class="form-control w-100 my-3" rows="20"
+                style="color: blanchedalmond; background-color: black; border-width: 4px; border-color: green; border-radius: 8px; padding: 10px;">
+            {{ code }}
+            </textarea>
 
+
+            <textarea id="output" type="text" name="output" class="form-control w-100" rows="5"
+                style="color: blanchedalmond; background-color: black; border-width: 4px; border-color: green; border-radius: 8px; padding: 10px;" disabled>
+            {{ output }}
+            </textarea>
+        </form>
         <!-- text area -->
-        <div id="textareacontainer">
-            <div id="textarea">
-                <div id="textareawrapper">
-                  <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false"
-                  style="color: blanchedalmond; background-color: black; height: 500px; width: 1200px; border-width: 4px; border-color: green; border-radius: 8px; padding: 10px;">
-                    
-                  </textarea>
-                </div>
-            </div>
-        </div>
+        
+
+
+        <button class="btn btn-lg btn-primary" type="submit">Submit</button>
     </div>
 
 
