@@ -4,12 +4,12 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def home(request):
-    return render(request, 'signin.html')
+def index(request):
+    return render(request, 'oj/signin.html')
 
 
 def createuser(request):
-    return render(request, 'signup.html')
+    return render(request, 'oj/signup.html')
 
 
 def createuser(request):
