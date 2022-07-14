@@ -18,27 +18,29 @@
         <div class="col-md-4"></div>
         <div class="col-md-4 text-center">
             <h1 class="h3 mt-5 mb-3 fw-normal">Create user</h1>
-            <div class="row g-3">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            <form action="create" method="post">
+                <div class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
                 </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                <div>
+                  <input type="email" class="form-control my-2" id="floatingInput" placeholder="User name">                
                 </div>
-              </div>
-              <div>
-                <input type="email" class="form-control my-2" id="floatingInput" placeholder="User name">                
-              </div>
-              <div>
-                <input type="email" class="form-control my-2" id="floatingInput" placeholder="Email">                
-              </div>
-              <div>
-                <input type="email" class="form-control my-2" id="floatingInput" placeholder="Password">                
-              </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit" style="border-color: white;">Create User</button>
+                <div>
+                  <input type="email" class="form-control my-2" id="floatingInput" placeholder="Email">                
+                </div>
+                <div>
+                  <input type="email" class="form-control my-2" id="floatingInput" placeholder="Password">                
+                </div>
+            </form>
+            <button class="w-100 btn btn-lg btn-primary" type="submit" style="border-color: white;">Create User</button>
         </div>
 
-        
+
         <div class="col-md-4"></div>
         
     </div>

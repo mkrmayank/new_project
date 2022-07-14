@@ -15,14 +15,14 @@
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hello!</a>
+          <a class="navbar-brand disabled" href="#">Hello!</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="http://localhost:8000/oj/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -47,33 +47,27 @@
             </div>
             <div class="dropdown col-md-3 text-start">
                 <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border-color: gray;">
-                  Python 3.8.0
+                 ----------------
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">G++</a></li>
-                  <li><a class="dropdown-item" href="#">Python 3.8.0</a></li>
-                  <li><a class="dropdown-item" href="#">Java</a></li>
+                  <li><a class="dropdown-item" href="http://localhost:8000/oj/question/MINIMUMJUMPS/code">G++</a></li>
+                  <li><a class="dropdown-item" href="http://localhost:8000/oj/question/MINIMUMJUMPS/code">Python 3.8.0</a></li>
+                  <li><a class="dropdown-item" href="http://localhost:8000/oj/question/MINIMUMJUMPS/code">Java</a></li>
                 </ul>
               </div>
         </div>
-        <form action="/runcode" method="post">
+        <form action="runcode" method="post">
             {% csrf_token %}
-            <textarea action="/runcode" method="post" id="codearea" type="text" name="codearea" class="form-control w-100 my-3" rows="20"
-                style="color: blanchedalmond; background-color: black; border-width: 4px; border-color: green; border-radius: 8px; padding: 10px;">
+            <textarea action="/runcode" method="post" id="codearea" type="text" name="codearea" class="form-control w-100 my-3 bg-dark" rows="20"
+                style="color: blanchedalmond; padding: 10px;">
             {{ code }}
-            </textarea>
-
-
-            <textarea id="output" type="text" name="output" class="form-control w-100" rows="5"
-                style="color: blanchedalmond; background-color: black; border-width: 4px; border-color: green; border-radius: 8px; padding: 10px;" disabled>
-            {{ output }}
             </textarea>
         </form>
         <!-- text area -->
         
 
 
-        <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+        <button class="btn btn-lg btn-primary mb-5" type="submit">Submit</button>
     </div>
 
 

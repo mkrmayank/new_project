@@ -8,5 +8,5 @@ from django.http import HttpResponse
 # def home(request):
 #     return render(request, 'index.html')
 
-def runcode(request):
-    return render(request, 'ide.html')
+def code(request):
+    return render(request, 'oj/ide.html')
