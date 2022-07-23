@@ -13,15 +13,24 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <main class="form-signin w-100 m-auto">
-                <form>
+                <form action="auth" method="post">
+                  {%csrf_token%}
+
                   <h1 class="h3 mt-5 mb-3 fw-normal">Sign in</h1>
+                  <div>
+                    {%for message in messages%}
+                    <div class="card text-bg-danger mb-3">
+                        <h5 class="fw-normal my-2" style="color: white;">{{message}}</h5>
+                    </div>
+                    {%endfor%}
+                  </div>
               
                   <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input name="username" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">User Name</label>
                   </div>
                   <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Password</label>
                   </div>
               
@@ -30,17 +39,8 @@
                       <input type="checkbox" value="remember-me"> Remember me
                     </label>
                   </div>
-                  <!-- <div class="row">
-                    <div class="col">
-                      <button class="w-100 btn btn-lg btn-primary" type="submit" style="border-color: white;">Sign in</button>
-                    </div>
-                    <div class="col">
-                      <button class="w-100 btn btn-lg btn-secondary" type="submit" style="border-color: white;">Sign in</button>
-                    </div>
-                  </div> -->
-
-
-                  <a href="http://localhost:8000/oj/" class="w-100 btn btn-lg btn-primary" type="submit" style="border-color: white;">Sign in</a>
+                  <button class="w-100 btn btn-lg btn-primary" type="submit" style="border-color: white;">Sign in</button>
+                  
                   <a href="http://localhost:8000/oj/user/signup" class="w-100 btn btn-lg btn-outline-secondary" type="submit" style="border-color: gray;">Create Account</a>
                   
                 <div class="my-5">

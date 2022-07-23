@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="http://localhost:8000/oj/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -43,20 +43,7 @@
     <div class="container">
       <!-- <h2 class="my-3">Hello Coder!</h2> -->
       <div class="row mt-2" style="background-color: rgb(254, 253, 207); border-radius: 8px; padding: 10px;">
-        <h2 class="mb-3">Hello Coder!</h2>
-        <div class="col-md-2 text-center">
-          <img class="rounded-circle my-2" height="100" width="100" src="https://media.istockphoto.com/vectors/default-profile-picture-avatar-photo-placeholder-vector-illustration-vector-id1223671392?k=20&m=1223671392&s=612x612&w=0&h=lGpj2vWAI3WUT1JeJWm1PRoHT3V15_1pdcTn2szdwQ0=" alt="">
-        </div>
-        <div class="col-md-10">
-          <h1>Mayank Kumar</h1>
-      
-          <h5 class="my-2">Skills</h5>
-          <span class="badge text-bg-primary">C++</span>
-          <span class="badge text-bg-secondary">Python</span>
-          <span class="badge text-bg-success">Java</span>
-          <span class="badge text-bg-danger">Django</span>
-          <span class="badge text-bg-warning">Angular</span>
-        </div>
+        <h2 class="mb-3">Hello {{user.first_name}}!</h2>
       </div>
 
 
@@ -83,12 +70,12 @@
               </div>
             </nav>
           </li>
-          <li class="list-group-item text-danger">
+          <li class="list-group-item text-success">
             <nav class="navbar">
               <div class="container-fluid">
-                <a class="navbar-brand text-danger" href="#">Question</a>
+                <a class="navbar-brand text-success" href="http://localhost:8000/oj/question/MINIMUMJUMPS">72 : MINIMUM JUMPS</a>
                 <div class="d-flex">
-                  18 minutes ago.
+                  45 minutes ago.
                 </div>
               </div>
             </nav>
@@ -96,19 +83,9 @@
           <li class="list-group-item text-success">
             <nav class="navbar">
               <div class="container-fluid">
-                <a class="navbar-brand text-success" href="#">Question</a>
+                <a class="navbar-brand text-success" href="http://localhost:8000/oj/question/MINIMUMJUMPS">72 : MINIMUM JUMPS</a>
                 <div class="d-flex">
-                  5 minutes ago.
-                </div>
-              </div>
-            </nav>
-          </li>
-          <li class="list-group-item">
-            <nav class="navbar">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#"><b>Question</b></a>
-                <div class="d-flex">
-                  --
+                  45 minutes ago.
                 </div>
               </div>
             </nav>
@@ -116,13 +93,14 @@
           <li class="list-group-item text-success">
             <nav class="navbar">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#"><b>Question</b></a>
+                <a class="navbar-brand text-success" href="http://localhost:8000/oj/question/MINIMUMJUMPS">72 : MINIMUM JUMPS</a>
                 <div class="d-flex">
-                  --
+                  45 minutes ago.
                 </div>
               </div>
             </nav>
           </li>
+          
         </ul>
       </div>
     </div>
